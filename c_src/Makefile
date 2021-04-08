@@ -67,9 +67,9 @@ ifeq ($(PLATFORM),msys2)
 	CXXFLAGS ?= -O3 -std=c++11 -finline-functions -fstack-protector -Wall
 else ifeq ($(PLATFORM),darwin)
 	CC ?= cc
-	CFLAGS ?= -O3 -std=c11 -arch x86_64 -fstack-protector -Wall -Wmissing-prototypes
-	CXXFLAGS ?= -O3 -std=c++11 -arch x86_64 -fstack-protector -Wall
-	LDFLAGS ?= -arch x86_64 -flat_namespace -undefined suppress
+	CFLAGS ?= -O3 -std=c11 -arch arm64 -fstack-protector -Wall -Wmissing-prototypes
+	CXXFLAGS ?= -O3 -std=c++11 -arch arm64 -fstack-protector -Wall
+	LDFLAGS ?= -arch arm64 -flat_namespace -undefined suppress
 else ifeq ($(PLATFORM),freebsd)
 	CC ?= cc
 	CFLAGS ?= -O3 -std=c11 -finline-functions -fstack-protector -Wall -Wmissing-prototypes
