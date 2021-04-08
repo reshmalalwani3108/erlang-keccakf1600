@@ -1,5 +1,7 @@
 # Keccak-f[1600] NIF (SHA3-224, SHA3-256, SHA3-384, SHA3-512, SHAKE128, SHAKE256, SPONGERNG)
 
+### Only works on Arm64 M1 Macs - needed it for a project so changed the target
+
 [![Build Status](https://travis-ci.org/potatosalad/erlang-keccakf1600.svg?branch=master)](https://travis-ci.org/potatosalad/erlang-keccakf1600) [![Hex.pm](https://img.shields.io/hexpm/v/keccakf1600.svg)](https://hex.pm/packages/keccakf1600)
 
 [Keccak-f[1600]](http://keccak.noekeon.org/) NIF with timeslice reductions for Erlang and Elixir.
