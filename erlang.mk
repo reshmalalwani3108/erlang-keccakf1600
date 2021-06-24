@@ -2141,7 +2141,7 @@ ifeq ($(PLATFORM),msys2)
 	CFLAGS ?= -O3 -std=c99 -finline-functions -Wall -Wmissing-prototypes
 	CXXFLAGS ?= -O3 -finline-functions -Wall
 else ifeq ($(PLATFORM),darwin)
-	CC ?= cc
+	CC ?= clang
 	CFLAGS ?= -O3 -std=c99 -arch arm64 -Wall -Wmissing-prototypes
 	CXXFLAGS ?= -O3 -arch arm64 -Wall
 	LDFLAGS ?= -arch arm64 -flat_namespace -undefined suppress
